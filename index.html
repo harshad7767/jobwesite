@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Posting Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5F5;
+            color: #2F4F4F;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #FFD700;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #003366;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        nav .left {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .left img {
+            width: 50px;
+            height: auto;
+            margin-right: 15px;
+        }
+
+        nav .left h1 {
+            margin: 0;
+            color: #FFD700;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav .right {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .right a {
+            color: #FFD700;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: 600;
+        }
+
+        nav .right a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            display: flex;
+            width: 80%;
+            margin: 40px auto;
+            gap: 20px;
+        }
+
+        .job-listings {
+            width: 70%;
+        }
+
+        .recent-job-openings {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* border-left: 5px solid #003366; */
+        }
+
+        .recent-job-openings h2 {
+            margin: 0 0 20px;
+            font-weight: 600;
+            color: #003366;
+            border-bottom: 2px solid #FFD700;
+            padding-bottom: 10px;
+        }
+
+        .job-listing {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #003366;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .job-listing:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .job-listing h3 {
+            margin: 0 0 10px;
+            font-weight: 600;
+            color: #003366;
+        }
+
+        .job-listing p {
+            margin: 5px 0;
+            color: #333333;
+        }
+
+        .apply-btn {
+            background-color: #FFD700;
+            color: #003366;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            background-color: #FFC107;
+            transform: translateY(-3px);
+        }
+
+        .notifications {
+            width: 30%;
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #FFD700;
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+
+        .notifications h3 {
+            margin: 0 0 20px;
+            font-weight: 600;
+            color: #FFD700;
+        }
+
+        .notification-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .notification-item:last-child {
+            border-bottom: none;
+        }
+
+        .notification-item p {
+            margin: 0;
+            color: #333333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+            border-top: 4px solid #FFD700;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .job-listings, .notifications {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <img src="https://via.placeholder.com/50" alt="Website Logo">
+            <h1>JobConnect</h1>
+        </div>
+        <div class="right">
+            <a href="#">Home Page</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="https://t.me/jobconnec" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vag8HybA89MqKatomR09" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </nav>
+
+    <!-- <header>
+        <h1>Job Posting Website</h1>
+        <p>Your Gateway to Premium Opportunities</p>
+    </header> -->
+
+    <div class="main-content">
+        <!-- Job Listings Section -->
+        <div class="job-listings">
+            <div class="recent-job-openings">
+                <h2>Recent Job Openings</h2>
+                <div class="job-listing">
+                    <h3>Software Developer</h3>
+                    <p><strong>Location:</strong> Remote</p>
+                    <p><strong>Company:</strong> Tech Innovators Inc.</p>
+                    <p><strong>Experience:</strong> 2-4 years</p>
+                    <p><strong>Description:</strong> We are looking for a skilled software developer proficient in Node.js and MongoDB.</p>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="job-listing">
+                    <h3>Frontend Developer</h3>
+                    <p><strong>Location:</strong> New York, NY</p>
+                    <p><strong>Company:</strong> Creative Solutions</p>
+                    <p><strong>Experience:</strong> 3-5 years</p>
+                    <p><strong>Description:</strong> Join our team as a frontend developer with expertise in React.js and responsive design.</p>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+
+                <div class="job-listing">
+                    <h3>Data Analyst</h3>
+                    <p><strong>Location:</strong> San Francisco, CA</p>
+                    <p><strong>Company:</strong> Data Insights LLC</p>
+                    <p><strong>Experience:</strong> 1-3 years</p>
+                    <p><strong>Description:</strong> We need a data analyst experienced in Python, SQL, and data visualization tools.</p>
+                    <a href="#" class="apply-btn">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notifications Section -->
+        <div class="notifications">
+            <h3>Notifications</h3>
+            <div class="notification-item">
+                <p><strong>System Update:</strong> Our platform will undergo maintenance on August 20th from 1:00 AM to 4:00 AM.</p>
+            </div>
+            <div class="notification-item">
+                <p><strong>New Feature:</strong> You can now save jobs to your favorites and apply later!</p>
+            </div>
+            <div class="notification-item">
+                <p><strong>Reminder:</strong> Don't forget to complete your profile to get personalized job recommendations.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Job Posting Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
