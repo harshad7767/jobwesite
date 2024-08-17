@@ -386,13 +386,56 @@ body {
   
 
   /* see details page CSS  */
-  /* Add this to your existing style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #003366;
+    color: white;
+}
+
+nav .left h1 {
+    margin: 0;
+}
+
+nav .right a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .menu-toggle div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
 
 /* Job Details Section */
-/* Job Details Section */
-.job-details {
+.job-details-container {
+    display: flex;
+    justify-content: space-between;
     width: 80%;
     margin: 40px auto;
+}
+
+.job-details {
+    width: 48%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -445,9 +488,14 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .job-details {
+    .job-details-container {
+        flex-direction: column;
         width: 90%;
-        margin: 20px auto;
+    }
+
+    .job-details {
+        width: 100%;
+        margin-bottom: 20px;
         padding: 15px;
     }
 
