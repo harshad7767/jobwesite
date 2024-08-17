@@ -153,15 +153,19 @@ body {
     justify-content: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
+
+  /* button start */
   
   .apply-btn, .share-btn, .copy-link-btn {
     background-color: #FFD700;
     color: #003366;
-    padding: 12px 25px;
+    padding: 8px 15px;
     text-decoration: none;
     border-radius: 25px;
     display: inline-block;
     font-weight: 600;
+    font-size: 14px; /* Smaller font size */
+    border: 1px solid transparent; /* Default border */
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
@@ -189,6 +193,9 @@ body {
     background-color: #218838;
     transform: translateY(-3px);
   }
+
+
+  /* button end */
   
   .notifications {
     width: 30%;
