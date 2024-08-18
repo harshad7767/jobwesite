@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dreamwalajob</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <h1>Dreamwalajob</h1>
+        </div>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="right">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-us.html">Contact</a>
+            <a href="https://t.me/dreamwalajob" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Logo" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://whatsapp.com/channel/0029Vag8HybA89MqKatomR09" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </nav>
+    <div class="contact-us-form">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/submit-contact-form" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
